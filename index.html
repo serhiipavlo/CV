@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Serhii Pavlo — API Automation Engineer / QA Engineer. 5+ years building, testing and automating data-intensive APIs. Ready to bring deep API expertise into the QA seat." />
+  <title>Serhii Pavlo — API Automation Engineer / QA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-dot"></span>
+      <span>serhii.pavlo</span>
+      <span class="nav__logo-suffix">/qa</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#fit">Why QA</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--ghost nav__cta" href="mailto:serhii.pavlyo.work@gmail.com">Hire me</a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__tag">
+        <span class="pulse"></span>
+        Open to API Automation / QA roles · remote
+      </div>
+      <h1 class="hero__title">
+        I built the APIs.<br />
+        Now I want to <span class="grad-text">break them properly.</span>
+      </h1>
+      <p class="hero__subtitle">
+        Hi, I'm <strong>Serhii Pavlo</strong> — a senior engineer with 5+ years building
+        large-scale React + Node.js / NestJS systems. I've spent those years writing REST APIs,
+        documenting them in Swagger, raising automated test coverage to ~95%, and wiring up CI/CD.
+        I'm now moving full-time into <strong>API Automation / QA</strong> — and I'm bringing the
+        developer brain with me.
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#fit">Why I fit Halo lab →</a>
+        <a class="btn btn--ghost" href="mailto:serhii.pavlyo.work@gmail.com">serhii.pavlyo.work@gmail.com</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__num">5<span>+</span></div>
+          <div class="stat__label">years in commercial<br />engineering</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">~95<span>%</span></div>
+          <div class="stat__label">automated test<br />coverage delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">3<span>×</span></div>
+          <div class="stat__label">table render<br />perf. improvement</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">50k<span>+</span></div>
+          <div class="stat__label">row datasets<br />tested end-to-end</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER LETTER / WHY THIS ROLE -->
+    <section id="fit" class="section">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Why this role at Halo lab</h2>
+        <p class="section__lead">
+          The vacancy asked for a cover letter. So instead of burying it on page two of a PDF —
+          here it is, up front.
+        </p>
+      </div>
+
+      <div class="cover">
+        <p>
+          For the last five years I've been on the <em>other side</em> of the QA process: writing the
+          REST endpoints, designing the request/response contracts, documenting them in Swagger,
+          and then making sure my unit / integration / e2e suites actually caught regressions before
+          they hit production. On <strong>Blue Yonder's Logistic Portal</strong> that meant pushing
+          automated coverage to ~95% on a data-management platform handling 50k+ row datasets — the
+          kind of system where a silently broken endpoint costs real money.
+        </p>
+        <p>
+          That experience taught me two things relevant to this role:
+        </p>
+        <ul>
+          <li>
+            <strong>API testing is most effective when the tester thinks like a developer.</strong>
+            I already read Swagger specs natively, design test data the way schemas demand,
+            and instinctively probe for the boundary conditions devs forget — null fields,
+            composite-key collisions, pagination edges, auth scope drift.
+          </li>
+          <li>
+            <strong>Automation is a product, not a script.</strong> I've maintained suites in
+            real CI for years (GitHub Actions), and I know what makes them stable vs. flaky.
+            That mindset translates directly to ReadyAPI / SoapUI assertions, data-driven
+            scenarios, and load-test pipelines.
+          </li>
+        </ul>
+        <p>
+          I'm switching tracks deliberately, not as a fallback. I want to spend my days where I
+          already spend my best energy: contracts, edge cases, reproducible failures, clean test
+          documentation. Halo lab's setup — remote, flat, English-speaking client work, AI-friendly
+          process — is exactly the environment where I can move fastest from "frontend engineer who
+          tests heavily" to "API Automation Engineer the team relies on."
+        </p>
+        <p class="cover__sign">— Serhii</p>
+      </div>
+    </section>
+
+    <!-- ABOUT / TRANSFERABLE -->
+    <section id="about" class="section">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">What I bring to QA on day one</h2>
+        <p class="section__lead">
+          Mapping my engineering work directly to the requirements in the JD.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="card__icon">🔌</div>
+          <h3>REST & SOAP from the inside</h3>
+          <p>
+            Years of designing and consuming RESTful services with NestJS + Swagger.
+            I read OpenAPI specs the way most people read English. Comfortable with HTTP
+            semantics, status codes, auth flows, content negotiation, and yes — SOAP envelopes
+            when legacy systems demand them.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🤖</div>
+          <h3>Automation as a habit</h3>
+          <p>
+            I scaled automated tests on Blue Yonder to <strong>~95% coverage</strong> across
+            unit, integration, and e2e layers using Jest. I know how to keep a suite green and
+            fast — and what makes it brittle. Translating that into ReadyAPI / SoapUI / TestComplete
+            assertions is a tooling shift, not a mindset shift.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">⚙️</div>
+          <h3>CI that actually runs</h3>
+          <p>
+            Set up and maintained <strong>GitHub Actions</strong> pipelines for full-stack apps —
+            including test stages, env matrices, and gated deploys. Ready to plug API and load
+            suites into CI on day one rather than asking "how do we run this nightly?"
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">📦</div>
+          <h3>Contract-first thinking</h3>
+          <p>
+            On every project I've worked on, the boundary between teams was the API contract.
+            I've negotiated, documented, and stress-tested those contracts with backend and
+            frontend leads. That's the same muscle that makes API testers valuable.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">📊</div>
+          <h3>Performance instincts</h3>
+          <p>
+            Improved table rendering <strong>3×</strong> for 50k-row datasets — which only happens
+            when you can read flame graphs and reason about request volume, response size, and
+            backpressure. Load and stress testing aren't a foreign concept; they're the diagnostic
+            tools I already reach for.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🧠</div>
+          <h3>AI-native workflow</h3>
+          <p>
+            I work with <strong>Claude, Codex, and self-hosted models</strong> daily — for code
+            generation, test scaffolding, schema diffing, and bug-report drafts. Halo lab's
+            "apply with an AI-built site" framing is the workflow I already live in.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Tooling</h2>
+        <p class="section__lead">
+          What I use confidently today — and what I'm actively ramping on for this role.
+        </p>
+      </div>
+
+      <div class="stack">
+        <div class="stack__col">
+          <h3 class="stack__title">Confident · today</h3>
+          <div class="chips">
+            <span class="chip chip--strong">REST APIs</span>
+            <span class="chip chip--strong">Swagger / OpenAPI</span>
+            <span class="chip chip--strong">Postman</span>
+            <span class="chip chip--strong">Jest</span>
+            <span class="chip chip--strong">Node.js</span>
+            <span class="chip chip--strong">NestJS</span>
+            <span class="chip chip--strong">TypeScript</span>
+            <span class="chip chip--strong">GitHub Actions (CI)</span>
+            <span class="chip chip--strong">Git</span>
+            <span class="chip chip--strong">Jira / issue tracking</span>
+            <span class="chip chip--strong">MongoDB</span>
+            <span class="chip chip--strong">Puppeteer (e2e)</span>
+            <span class="chip chip--strong">AI: Claude · Codex · Cursor</span>
+          </div>
+        </div>
+
+        <div class="stack__col">
+          <h3 class="stack__title">Ramping · for this role</h3>
+          <div class="chips">
+            <span class="chip chip--ramp">SmartBear ReadyAPI</span>
+            <span class="chip chip--ramp">SoapUI</span>
+            <span class="chip chip--ramp">LoadUI</span>
+            <span class="chip chip--ramp">TestComplete</span>
+            <span class="chip chip--ramp">SOAP / WSDL</span>
+            <span class="chip chip--ramp">Load &amp; stress scenarios</span>
+            <span class="chip chip--ramp">Groovy scripting</span>
+          </div>
+          <p class="stack__note">
+            "Ramping" doesn't mean from zero. The underlying concepts — assertions, data-driven runs,
+            mocking, CI integration, SLA-bound bug reporting — are things I've shipped under
+            different tool names. The migration is the syntax, not the engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Experience, reframed for QA</h2>
+        <p class="section__lead">
+          Same projects as my PDF — but pulled apart to show the testing, API, and CI work
+          that's most relevant to this role.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <article class="job">
+          <div class="job__meta">
+            <div class="job__date">Nov 2023 — Present</div>
+            <div class="job__role">Senior Engineer · API &amp; Test Automation focus</div>
+          </div>
+          <div class="job__body">
+            <h3 class="job__title">Blue Yonder — Logistic Portal</h3>
+            <p class="job__desc">
+              Enterprise data-management platform on OLAP cube structures. Advanced tables over
+              large nested-JSON datasets, complex data-processing flows, multi-team API surface.
+            </p>
+            <ul class="job__bullets">
+              <li><strong>Raised automated test coverage to ~95%</strong> across unit, integration, and e2e layers — including API contract tests against NestJS endpoints.</li>
+              <li><strong>Designed REST APIs end-to-end</strong> and documented them with full Swagger / OpenAPI specs used by both internal teams and integrators.</li>
+              <li><strong>Built CI/CD on GitHub Actions</strong>, gating merges on test suite results and integrating contract-level checks into the pipeline.</li>
+              <li><strong>Stress-tested data flows</strong> on 50k+ row datasets — profiling, reproducing slow scenarios, and verifying performance fixes with repeatable scripts.</li>
+              <li><strong>Owned bug triage</strong> in Jira with reproduction steps, payload captures, and clear severity tagging.</li>
+              <li>Facilitated cross-team API contracts; mediated breaking-change discussions between frontend, backend, and data teams.</li>
+              <li>Implemented role-based permission flows — exactly the kind of surface where API authorization tests pay off.</li>
+            </ul>
+            <div class="job__tech">
+              React · TypeScript · NestJS · Node.js · Swagger · Jest · GitHub Actions · MongoDB · Redux Toolkit
+            </div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job__meta">
+            <div class="job__date">May 2021 — Jan 2024</div>
+            <div class="job__role">Middle Engineer · Integrations &amp; document flows</div>
+          </div>
+          <div class="job__body">
+            <h3 class="job__title">Hubwise — Investment Portal</h3>
+            <p class="job__desc">
+              Customizable investment portal for banks and financial institutions — deposits,
+              withdrawals, regulated document generation, and archival flows. A high-stakes domain
+              where broken contracts and missed edge cases have real legal consequences.
+            </p>
+            <ul class="job__bullets">
+              <li>Built a <strong>PDF document generator</strong> driven by input data + templates — testing meant validating output across dozens of input permutations and locale rules.</li>
+              <li>Implemented <strong>regulatory archiving</strong> for client documents — strict reliability and reproducibility requirements, naturally test-heavy.</li>
+              <li>Worked daily with REST APIs for payment flows; reproduced and reported integration bugs against staging environments.</li>
+              <li>Collaborated in <strong>English with international stakeholders</strong> — same setup Halo lab describes.</li>
+            </ul>
+            <div class="job__tech">
+              React · Node.js · TypeScript · Jest · Puppeteer · Webpack · Material UI
+            </div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job__meta">
+            <div class="job__date">Mar 2019 — Feb 2020</div>
+            <div class="job__role">Junior Engineer · multi-project</div>
+          </div>
+          <div class="job__body">
+            <h3 class="job__title">Early career — commercial projects</h3>
+            <p class="job__desc">
+              Gaming Web3 service, a 3D construction explorer, a salon management app, a celebrity
+              site. The years where I learned, the hard way, why testing isn't optional.
+            </p>
+            <ul class="job__bullets">
+              <li>Built Node.js backends for video storage — first exposure to integration testing and uptime ownership.</li>
+              <li>Connected client apps to blockchain services via Web3 — early lessons in flaky integrations and the importance of stable mocks.</li>
+              <li>Document management features (save / delete) — small but a clean playground for input validation testing.</li>
+            </ul>
+            <div class="job__tech">
+              JavaScript · React · React Native · Node.js · Web3 · MobX
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- AI IN QA -->
+    <section class="section">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title">How I use AI in a QA workflow</h2>
+        <p class="section__lead">
+          The JD listed this as nice-to-have. For me it's already default behavior.
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card card--soft">
+          <h3>Test case generation from specs</h3>
+          <p>
+            Feed Swagger / OpenAPI into Claude or Codex → get a first-pass matrix of positive,
+            negative, and boundary scenarios. I review and prune; the model does the busywork.
+          </p>
+        </article>
+        <article class="card card--soft">
+          <h3>Bug-report drafting under SLA</h3>
+          <p>
+            Reproduction notes + payloads in, well-structured Jira ticket out — with severity
+            justification, expected vs. actual, and a reproduction script. Cuts triage friction.
+          </p>
+        </article>
+        <article class="card card--soft">
+          <h3>Test-data fabrication</h3>
+          <p>
+            Generating realistic, schema-valid payloads (including the awkward ones — unicode,
+            timezone edge cases, composite-key collisions) is exactly what LLMs are good at.
+          </p>
+        </article>
+        <article class="card card--soft">
+          <h3>Requirement gap analysis</h3>
+          <p>
+            Diff a user story against the actual API contract → list of ambiguities to clarify
+            with the PM before tests get written against the wrong assumptions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOFT SKILLS -->
+    <section class="section">
+      <div class="section__head">
+        <span class="section__num">06</span>
+        <h2 class="section__title">Working style</h2>
+        <p class="section__lead">
+          Pulled directly from the qualities Halo lab listed — and how I actually show up against them.
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="trait">
+          <div class="trait__head">Proactive mindset</div>
+          <p>I don't wait to be assigned. On Blue Yonder I drove the test-coverage push myself when I saw the gaps; same energy I'll bring here.</p>
+        </div>
+        <div class="trait">
+          <div class="trait__head">Quality-focused, system-level</div>
+          <p>I think in contracts and invariants, not in symptoms. A bug that reproduces once is a bug I want a regression test for.</p>
+        </div>
+        <div class="trait">
+          <div class="trait__head">Direct, open communication</div>
+          <p>If a scope, deadline, or design doesn't make sense, I say so early. Polite, but not vague — saves everyone a sprint.</p>
+        </div>
+        <div class="trait">
+          <div class="trait__head">Self-driven, remote-native</div>
+          <p>I've worked remote with international clients for years. I own my schedule, my standup updates, and my blockers.</p>
+        </div>
+        <div class="trait">
+          <div class="trait__head">Translates between roles</div>
+          <p>I can explain a flaky test to a PM, a race condition to a designer, and an API contract issue to a backend dev — without losing any of them.</p>
+        </div>
+        <div class="trait">
+          <div class="trait__head">English in production</div>
+          <p>Upper-intermediate, used daily with international stakeholders. Comfortable on calls, in async writing, and in technical debate.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION + LANGUAGES -->
+    <section class="section section--split">
+      <div>
+        <span class="section__num">07</span>
+        <h2 class="section__title">Education</h2>
+        <ul class="plain">
+          <li><strong>MS · IT Project Management</strong> — Lviv Polytechnic National University</li>
+          <li><strong>BS · Software Engineering</strong> — Lviv Polytechnic National University</li>
+        </ul>
+      </div>
+      <div>
+        <span class="section__num">08</span>
+        <h2 class="section__title">Languages</h2>
+        <ul class="plain">
+          <li><strong>English</strong> — Upper-intermediate (daily use with clients)</li>
+          <li><strong>Ukrainian</strong> — Native</li>
+          <li><strong>Czech</strong> — Beginner</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact">
+      <div class="contact">
+        <span class="section__num">09</span>
+        <h2 class="section__title">Let's talk</h2>
+        <p class="section__lead">
+          If the cover letter, the experience, or the AI-built version of this page resonated —
+          here's how to reach me. Fastest channel is email.
+        </p>
+
+        <div class="contact__grid">
+          <a class="contact__card" href="mailto:serhii.pavlyo.work@gmail.com">
+            <div class="contact__label">Email</div>
+            <div class="contact__value">serhii.pavlyo.work@gmail.com</div>
+          </a>
+          <a class="contact__card" href="tel:+420770635867">
+            <div class="contact__label">Phone</div>
+            <div class="contact__value">+420 770 635 867</div>
+          </a>
+          <a class="contact__card" href="https://www.linkedin.com/in/serhii-pavlo-0a07a31a2/" target="_blank" rel="noopener">
+            <div class="contact__label">LinkedIn</div>
+            <div class="contact__value">/in/serhii-pavlo-0a07a31a2</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year"></span> Serhii Pavlo · Built with Claude Code for the Halo lab API Automation role.</div>
+    <div class="footer__meta">Single-page · responsive · no logins, no paywall.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          const el = document.querySelector(id);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
