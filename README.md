@@ -1,8 +1,9 @@
 # Serhii Pavlo — CV site
 
-Single-page CV / landing page tailored for the **API Automation Engineer / QA Engineer** role at Halo lab.
+Single-page portfolio / CV for a **Senior Frontend Engineer** — meant to be shared alongside the
+PDF résumé when applying to frontend roles.
 
-- `index.html` — content (cover letter, transferable experience, stack, timeline, contact).
+- `index.html` — content (about, focus areas, tech stack, experience timeline, contact).
 - `styles.css` — dark, responsive design. No framework, no build step.
 - `.github/workflows/pages.yml` — auto-deploy to GitHub Pages on every push to `main`.
 
